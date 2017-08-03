@@ -1,0 +1,35 @@
+{{!< default}}
+	   	<div class="section">
+	      <div class="row">
+	        <div class="col-md-3 mepic"></div>
+	        <div class="col-md-9">
+	        <h3>Axel Hultman</h3>
+	          <p>Soul-delay nodal point media face forwards-space grenade realism computer cartel jeans advert artisanal urban dolphin physical dissident. Geodesic vehicle monofilament bridge receding towards digital DIY. Disposable realism semiotics alcohol-space euro-pop hacker tank-traps footage nodal point apophenia industrial grade man decay camera. Legba pre-smart-gang silent futurity voodoo god neural marketing otaku sprawl wristwatch crypto-tank-traps ablative. Sign long-chain hydrocarbons hotdog render-farm bridge A.I. engine stimulate chrome garage. Nodal point gang neural convenience store bicycle 3D-printed pistol A.I. vinyl motion market network tank-traps.</p>
+	        </div>
+	        <!-- Icons by Alfredo  at http://creativemarket.com/alfredoh. -->
+	        <div class="col-sm-1"><img class="socialmediaicon" src="{{asset "svg/fullcircle_mail.svg" }}" alt="socialmedialink"></div>
+	        <div class="col-sm-1"><img class="socialmediaicon" src="{{asset "svg/fullcircle_git.svg" }}" alt="socialmedialink"></div>
+	        <div class="col-sm-1"><img class="socialmediaicon" src="{{asset "svg/fullcircle_linkedin.svg" }}" alt="socialmedialink"></div>
+	      </div>
+        <div class="row">
+          <div class="col-md-12" id="projects">
+            <h1>Projects</h1>
+          </div>
+        </div>
+	      <div class="post-feed">
+        {{#get "posts" filter="featured:true" as |featured|}} <!-- Only gettings featured posts -->
+            {{#foreach featured}}
+            	<div class="row post-row">
+	                {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+	                {{> post-card}}
+              </div>
+            {{/foreach}}
+        {{/get}}
+        </div>
+
+	    </div>
+
+   	</div>
+  
+</body>
+</html>

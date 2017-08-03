@@ -1,0 +1,129 @@
+body {
+	background-color: #fff;
+	width: 100%;
+}
+
+h1, h2, h3{
+	color: #000;
+	font-family: 'Merriweather', serif;
+}
+
+#name {
+	font-size: 24em;
+	color: #fff;
+	text-align: center;
+}
+
+#projects {
+	margin: 2em 0em;
+	padding: 0em 0em;
+}
+
+h1 { font-size: 8em; }
+h2 { font-size: 4em; }
+h3 { font-size: 2em; }
+
+p {
+	color: #000;
+	font-family: 'Open Sans', sans-serif;
+	text-align: justify;
+}
+
+
+a, a:hover, a:active {
+	color: #0f9b32;
+}
+
+
+img {
+	width: 100%;
+}
+
+
+.container {
+	margin-top: -20px;
+}
+
+.toppicture {
+	background-image: url("../img/mork.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #000;
+	background-position: center bottom;
+	min-height: 36em;
+	margin-top: 20px;
+	width: 100%;
+}
+
+.mepic {
+	background-size: cover;
+	background-color: #000;
+	min-height: 24em;
+	background-image: url("../img/mitt_ansikte_small.jpg");
+}
+.picture, .picture2 {
+	width: 100%;
+	min-height: 24em;
+	background-color: #000;
+}
+
+.fill-background {
+	height: 24em;
+}
+
+.name {
+	padding-left: 0.2em;
+}
+
+.section {
+	margin-bottom: 6em;
+	margin-top: 6em;
+	padding: 0em 8em; 
+}
+
+.socialmediaicon {
+	margin-top: 1em;
+	max-height: 5em;
+}
+
+.footer {
+	margin-bottom: 10em;
+}
+
+.row { margin: 0px; }
+
+@media only screen 
+  and (min-width: 320px) 
+  and (max-width: 996px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+  	#name {
+  		padding-top: 1.5em;
+  		font-size: 8em;
+  	}
+
+	.mepic {
+		background-position: 0% 63%;
+	}
+
+	.socialmediaicon {
+		max-height: 4em;
+	}
+
+	.section {
+		padding: 0em 0em; /* TODO:  needs fix for mobile */
+	}
+
+	.toppicture {
+		width: 100vw;
+		margin: 0px;
+		padding: 0px;	
+	}
+	p {font-size: 1.2em;}
+	h1 { font-size: 3.5em; }
+	h2 { font-size: 1.8em; }
+	h3 { font-size: 1.4em; }
+
+
+
+}
